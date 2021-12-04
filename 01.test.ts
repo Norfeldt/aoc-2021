@@ -1,8 +1,5 @@
 import { describe, expect, it, run } from 'https://deno.land/x/tincan/mod.ts'
-import { bgBrightYellow, black } from 'https://deno.land/std/fmt/colors.ts'
-
-const log = (mgs: string | number) => console.log(bgBrightYellow(black(` ${mgs} `)))
-const logResult = (result: string | number) => log(`result: ${result}`)
+import { logResult } from './helpers.ts'
 
 describe('1st of december', () => {
   const exampleData = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
