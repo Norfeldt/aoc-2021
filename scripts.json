@@ -1,0 +1,11 @@
+{
+  "$schema": "https://deno.land/x/denon@2.4.9/schema.json",
+  "scripts": {
+    "unit": {
+      "desc": "Execute unit tests",
+      "cmd": "deno test",
+      "allow": ["read"],
+      "unstable": true
+    }
+  }
+}
