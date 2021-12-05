@@ -1,5 +1,5 @@
 import { describe, expect, it, run } from 'https://deno.land/x/tincan/mod.ts'
-import { logResult } from './helpers.ts'
+import { logResult } from '../helpers.ts'
 
 describe('1st of december', () => {
   const exampleData = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263]
@@ -20,7 +20,7 @@ describe('1st of december', () => {
 
     it('works for the challenge', () => {
       // read the data from the file line by line as one array of numbers
-      const data = Deno.readTextFileSync('./01.data.part1.txt').split('\n').map(Number)
+      const data = Deno.readTextFileSync('./01/data.txt').split('\n').map(Number)
 
       const result = timesDepthMeasurementsIncrease(data)
 
@@ -66,7 +66,7 @@ describe('1st of december', () => {
 
     it('works for the 2nd part of the challenge', () => {
       // read the data from the file line by line as one array of numbers
-      const data = Deno.readTextFileSync('./01.data.part1.txt').split('\n').map(Number)
+      const data = Deno.readTextFileSync('./01/data.txt').split('\n').map(Number)
 
       const result = timesDepthMeasurementsDecreaseInSlidingWindows(data)
 

@@ -1,5 +1,5 @@
 import { describe, expect, it, run } from 'https://deno.land/x/tincan/mod.ts'
-import { log, logResult } from './helpers.ts'
+import { log, logResult } from '../helpers.ts'
 
 describe('2nd of december - DIVE POSITION', () => {
   const exampleData = ['forward 5', 'down 5', 'forward 8', 'up 3', 'down 8', 'forward 2']
@@ -26,7 +26,7 @@ describe('2nd of december - DIVE POSITION', () => {
     })
 
     it('part 1 challenge', () => {
-      const data = Deno.readTextFileSync('./02.data.part1.txt').split('\n')
+      const data = Deno.readTextFileSync('./02/data.txt').split('\n')
 
       const result = calculateDivePosition(data)
 
@@ -64,7 +64,7 @@ describe('2nd of december - DIVE POSITION', () => {
     })
 
     it('part 2 challenge', () => {
-      const data = Deno.readTextFileSync('./02.data.part1.txt').split('\n')
+      const data = Deno.readTextFileSync('./02/data.txt').split('\n')
 
       const result = calculateDivePosition(data)
 
