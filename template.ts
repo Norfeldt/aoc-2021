@@ -9,7 +9,7 @@ describe('XX of december - ', () => {
   })
 
   describe('part 2', () => {
-    it('example for part 1', () => {})
+    it('example for part 2', () => {})
   })
 })
 
